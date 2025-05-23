@@ -1,0 +1,7 @@
+datasets
+runs
+*.pt
+*.pth
+*.zip
+__pycache__
+*/outputs
