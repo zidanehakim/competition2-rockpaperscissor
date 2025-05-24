@@ -1,0 +1,12 @@
+path: /root/ak/concrete_damage_dataset
+train: train/images
+val: val/images
+test: test/images
+nc: 3
+names:
+  0: Exposed rebar
+  1: Crack
+  2: Spalling
+download: false
+
+#train run: yolo train model=yolov8l.pt data=concrete_damage.yaml epochs=100 imgsz=1024 batch=24 workers=8
