@@ -107,27 +107,6 @@ python Single_Head_Classifier/csv_combiner.py
 # Output: combined_predictions.csv
 ```
 
-## File Structure
-
-```
-Competition_4/
-├── Yolo_v8_l_Detection/
-│   ├── 1. yolov8_test_script.py        # YOLOv8 detection
-│   ├── 2. extract_boxes_script.py      # Extract bounding boxes
-│   └── concrete_damage.yaml            # YOLO config
-├── Single_Head_Classifier/
-│   ├── Damage_Single_Head/
-│   │   ├── damage_classifier.py        # Train damage model
-│   │   └── damage_inference.py         # Damage inference
-│   ├── Crack_Single_Head/
-│   │   ├── crack_classifier.py         # Train crack model
-│   │   └── crack_inference.py          # Crack inference
-│   ├── Balancing_Dataset/
-│   │   ├── simple_balancer.py          # Dataset balancing
-│   │   └── test.ipynb                  # Interactive testing
-│   └── csv_combiner.py                 # Combine results
-└── column/                             # Test images
-```
 
 ## Class Definitions
 
@@ -152,13 +131,14 @@ Competition_4/
 
 ## Key Output Files
 
-| File | Description | Format |
-|------|-------------|--------|
-| `detection_report.csv` | YOLOv8 detection results | image_id, detected_classes |
-| `extracted_boxes_report.csv` | Bounding box mapping | main_image, sub_images, class_ids |
-| `damage_results_detailed.csv` | Damage classification | image_name, damage_class, confidence |
-| `crack_results_detailed.csv` | Crack classification | image_name, crack_class, confidence |
-| `combined_predictions.csv` | Final merged results | all_classes, mapped_classes, high_prob_classes |
+| ID |File | Description | Format |
+|----|------|-------------|--------|
+| 1.| `detection_report.csv` | YOLOv8 detection results | image_id, detected_classes |
+| 2.| `extracted_boxes_report.csv` | Bounding box mapping | main_image, sub_images, class_ids |
+| 3.| `damage_results_detailed.csv` | Damage classification | image_name, damage_class, confidence |
+| 4.| `crack_results_detailed.csv` | Crack classification | image_name, crack_class, confidence |
+| 5.| `combined_predictions.csv` | Merged and map results (ID = 3 + 4) | all_classes, mapped_classes, high_prob_classes |
+| 6.| `column.csv` | Final results (Manual Filtering from ID = 1 & 5) | ID, class |
 
 ## Mapping Rules
 
