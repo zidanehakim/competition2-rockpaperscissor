@@ -1,6 +1,6 @@
-# Concrete Damage Detection Pipeline - Simple Guide
+# Column Concrete Damage Detection Pipeline
 
-A deep learning pipeline for detecting and classifying concrete damage using YOLOv8 and ResNet50 models.
+A deep learning pipeline for detecting and classifying column concrete damage using YOLOv8 and ResNet50 models.
 
 ## System Overview
 
