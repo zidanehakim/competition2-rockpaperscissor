@@ -11,14 +11,21 @@ The pipeline has 4 main stages:
 4. **Result Combination** - Merge predictions with mapping rules
 
 ## Prerequisites
-
+### Option 1: Conda environment (Recommended)
+```bash
+conda env create -f environment.yml
+conda activate concrete-damage-detection
+```
+### Option 2: Manual install
 ```bash
 pip install torch torchvision ultralytics opencv-python scikit-learn pandas numpy matplotlib seaborn tqdm pillow
 ```
+### Available requirement files:
+- `environment.yml` - Conda environment with CUDA support
 
 ## Step-by-Step Execution
 
-### Step 1: Train YOLOv8 Model (if needed)
+### Step 1: Train YOLOv8 Model
 
 ```bash
 # Train YOLOv8 for damage detection
@@ -47,7 +54,7 @@ python "Yolo_v8_l_Detection/2. extract_boxes_script.py"
 # Output: extracted_boxes/ (sub-images), extracted_boxes_report.csv
 ```
 
-### Step 4: Balance Dataset (Optional)
+### Step 4: Balance Dataset
 
 ```bash
 # Balance training dataset for better classification
