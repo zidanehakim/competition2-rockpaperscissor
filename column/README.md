@@ -185,13 +185,6 @@ names:
 7. Combined Classification results in `combined_predictions.csv`
 8. Check the final result (Manual Filtering) in `column.csv`
 
-## Troubleshooting
-
-- **CUDA memory error**: Reduce batch size in training scripts
-- **Model not found**: Ensure model weights exist in specified paths
-- **No images found**: Check input directory paths and file extensions
-- **CSV format error**: Verify column names match expected format
-- **Low accuracy**: Check dataset balance and quality
 
 ## Interactive Testing
 
