@@ -182,7 +182,8 @@ names:
 4. Run damage inference: `python Single_Head_Classifier/Damage_Single_Head/damage_inference.py --model best_damage_model.pth --input column/ --output damage_results.csv --detailed`
 5. Run crack inference: `python Single_Head_Classifier/Crack_Single_Head/crack_inference.py --model best_crack_model.pth --input extracted_boxes/ --output crack_results.csv --detailed`
 6. Combine results: `python Single_Head_Classifier/csv_combiner.py`
-7. Check final results in `combined_predictions.csv`
+7. Combined Classification results in `combined_predictions.csv`
+8. Check the final result (Manual Filtering) in `column.csv`
 
 ## Troubleshooting
 
